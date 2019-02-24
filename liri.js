@@ -10,7 +10,7 @@ var fs = require ('fs');
 var cmd = ""; 
 var userArg = "";
 
-function makeChoice() {
+function makeAChoice() {
     inquirer
       .prompt([
         {
@@ -100,7 +100,7 @@ function makeChoice() {
                 {
                 type: 'input',
                 name: 'userArg',
-                message: 'Please provide Liri-bot with the song that you would like to look-up: '
+                message: 'Please provide Liri-bot with the song you would like to look-up: '
                 }
             ])
             .then(answers => {
@@ -158,7 +158,7 @@ function makeChoice() {
                 {
                 type: 'input',
                 name: 'userArg',
-                message: 'Please provide Liri-bot with the movie that you would like to look-up: '
+                message: 'Please provide Liri-bot with the movie you would like to look-up: '
                 }
             ])
             .then(answers => {
